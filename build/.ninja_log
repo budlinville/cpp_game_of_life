@@ -1,0 +1,16 @@
+# ninja log v5
+0	296	1688498722887083018	CMakeFiles/GameOfLife.dir/src/Simulation/simulation.cpp.o	64da87f275ca8768
+1	186	1688498138961926239	CMakeFiles/GameOfLife.dir/src/Grid/grid.cpp.o	b948c71f341bf4df
+0	37	1688495663693489033	build.ninja	ccc6956c3156132c
+296	384	1688498722967083019	GameOfLife	a1e4a9dac049b05a
+0	156	1688498224647949180	CMakeFiles/GameOfLife.dir/src/main.cpp.o	e348d295ca215138
+0	150	1688498737647083220	CMakeFiles/GameOfLife.dir/src/Simulation/simulation.cpp.o	64da87f275ca8768
+150	235	1688498737727083221	GameOfLife	a1e4a9dac049b05a
+1	148	1688498804282915311	CMakeFiles/GameOfLife.dir/src/Simulation/simulation.cpp.o	64da87f275ca8768
+148	215	1688498804342915312	GameOfLife	a1e4a9dac049b05a
+0	150	1688498830105576254	CMakeFiles/GameOfLife.dir/src/Simulation/simulation.cpp.o	64da87f275ca8768
+150	221	1688498830175576255	GameOfLife	a1e4a9dac049b05a
+0	146	1688498850507291122	CMakeFiles/GameOfLife.dir/src/Simulation/simulation.cpp.o	64da87f275ca8768
+146	212	1688498850577291123	GameOfLife	a1e4a9dac049b05a
+0	140	1688498880700774125	CMakeFiles/GameOfLife.dir/src/Simulation/simulation.cpp.o	64da87f275ca8768
+140	269	1688498880830774127	GameOfLife	a1e4a9dac049b05a
