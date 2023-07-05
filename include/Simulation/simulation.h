@@ -23,6 +23,7 @@ private:
     int m_terminalWidth;
     int m_terminalHeight;
     std::mutex m_gridMtx;  // Mutex for synchronizing access to m_grid
+    int m_pctAlive;
 
     void init();
     void displayGrid();

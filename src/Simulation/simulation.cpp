@@ -4,7 +4,7 @@
 
 #include "../../include/Simulation/simulation.h"
 
-Simulation::Simulation(int size, int pctAlive) {
+Simulation::Simulation(int size, int pctAlive) : m_pctAlive(pctAlive) {
     this->init();
     m_grid = Grid(size, this->m_terminalWidth, this->m_terminalHeight, pctAlive);
 }
@@ -70,6 +70,10 @@ bool Simulation::handleKeyPress(int key) {
         case KEY_RIGHT:
             this->m_grid.moveDisplayX(2);
             break;
+        case 'r':
+        case 'R':
+            this->m_grid.randomizeCells(this->m_pctAlive);
+            break;
         case 27:
             return false;
         default:
@@ -89,6 +93,6 @@ void Simulation::updateGridThread() {
         }  // Lock released here
 
         // Sleep for specified duration
-        std::this_thread::sleep_for(std::chrono::seconds(1));  // Example sleep duration
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));  // Example sleep duration
     }
 }
