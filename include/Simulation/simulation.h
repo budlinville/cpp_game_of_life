@@ -1,20 +1,18 @@
 #pragma once
 
+#include <mutex>
+
 #include "../Grid/grid.h"
 
 class Simulation {
-public:
-    Simulation(int size, int displaySize, int pctAlive)
-        : m_grid(Grid(500, 50, 30))
-        {
-            this->init();
-        }
-    
+public:    
     Simulation(Grid grid)
         : m_grid(grid)
         {
             this->init();
         }
+
+    Simulation(int size, int pctAlive);
     
     ~Simulation();
 
@@ -22,8 +20,13 @@ public:
 
 private:
     Grid m_grid;
+    int m_terminalWidth;
+    int m_terminalHeight;
+    std::mutex m_gridMtx;  // Mutex for synchronizing access to m_grid
 
     void init();
     void displayGrid();
     bool handleKeyPress(int key);
+
+    void updateGridThread();
 };

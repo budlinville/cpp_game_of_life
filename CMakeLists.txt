@@ -15,5 +15,5 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 # Find the ncurses library
 set(CURSES_NEED_NCURSES TRUE)
 find_package(Curses REQUIRED Paths /usr/include/ncurses.h)
-target_include_directories(GameOfLife PRIVATE ${CURSES_INCLUDE_DIRS})
-target_link_libraries(GameOfLife ${CURSES_LIBRARIES})
+target_include_directories(${PROJECT_NAME} PRIVATE ${CURSES_INCLUDE_DIRS})
+target_link_libraries(${PROJECT_NAME} PRIVATE ${CURSES_LIBRARIES} pthread)

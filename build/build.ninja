@@ -85,7 +85,7 @@ build CMakeFiles/GameOfLife.dir/src/Simulation/simulation.cpp.o: CXX_COMPILER__G
 # Link the executable GameOfLife
 
 build GameOfLife: CXX_EXECUTABLE_LINKER__GameOfLife CMakeFiles/GameOfLife.dir/src/main.cpp.o CMakeFiles/GameOfLife.dir/src/Grid/grid.cpp.o CMakeFiles/GameOfLife.dir/src/Simulation/simulation.cpp.o | /usr/lib/x86_64-linux-gnu/libncurses.so /usr/lib/x86_64-linux-gnu/libform.so
-  LINK_LIBRARIES = -lncurses  /usr/lib/x86_64-linux-gnu/libform.so
+  LINK_LIBRARIES = -lncurses  /usr/lib/x86_64-linux-gnu/libform.so  -lpthread
   OBJECT_DIR = CMakeFiles/GameOfLife.dir
   POST_BUILD = :
   PRE_LINK = :
